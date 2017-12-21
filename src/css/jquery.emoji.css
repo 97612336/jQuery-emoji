@@ -14,7 +14,7 @@
 
 .emoji_container {
     display: none;
-    width: 544px;
+    max-width: 544px;
     position: absolute;
     background-color: #fff;
     border: 1px solid #bfbfbf;
@@ -161,4 +161,51 @@
     vertical-align: middle;
     max-width: 42px;
     max-height: 42px;
+}
+
+
+/* 自定义 */
+.emoji_tab_next, .emoji_tab_prev {
+    display: none;
+}
+.emoji_tab_list {
+    left: 8px;
+}
+.emoji_tab_list ul li {
+    width: auto;
+    padding: 0 15px;
+    -khtml-user-select: none;
+      -moz-user-select: none;
+           user-select: none;
+    -webkit-transition:.2s;
+       -moz-transition:.2s;
+         -o-transition:.2s;
+        -ms-transition:.2s;
+            transition:.2s;
+}
+
+.emoji_content ul li {
+    display: inline-block;
+    float: none;
+}
+.emoji_content ul li a img {
+    max-height: 35px;
+}
+.emoji_container {
+    margin-right: 10px;
+    max-width: 520px;
+}
+.emoji_preview {
+    pointer-events: none;
+}
+/* 小表情 */
+.wp-smiley {
+    height: 26px!important;
+    width: auto!important;
+    max-height: none!important;
+    vertical-align: bottom;
+    -webkit-box-shadow: none!important;
+       -moz-box-shadow: none!important;
+            box-shadow: none!important;
+    border: none!important;
 }

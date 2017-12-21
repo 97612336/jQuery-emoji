@@ -16,20 +16,27 @@ Support for specifying the code format of emoji.
 Support for converting the code string of emoji into emoji picture.
 * 支持多组表情并提供tab切换。  
 Support for multiple groups of emoji and tabs to toggle.
-* 示例已带有百度贴吧和qq高清2套表情。  
-The demo has been with 2 sets of emojis:Baidu tieba emoji & QQ HD emoji.
+* 示例已带有QQ、贴吧、微博、阿鲁表情。  
 * 同一页面支持多个表情实例。  
 Support for multiple instances in one page.
 
 ## 示例&文档 Demo&Doc
-[http://eshengsky.github.io/jQuery-emoji/](http://eshengsky.github.io/jQuery-emoji/)
+见 index.html
 
 ## 更新日志 Changelog
-####v1.2 2016/03/04
+#### v1.3 2017/12/21
+* 新增表情列表根文件目录设置
+* 删除对 mCustomScrollbar 的依赖
+* 更改表情配置方式
+* 修改表情预览框位置的判定方式
+* 增加对移动端的兼容
+* 整合了贴吧、QQ、微博、阿鲁全套表情
+
+#### v1.2 2016/03/04
 * 修改默认表情按钮图片，以解决IE下不显示svg类型base64图片的问题。  
 Modify the default button image, in order to solve the problem that does not display svg type base64 image with IE.
 
-####v1.1 2016/03/03
+#### v1.1 2016/03/03
 * 优化代码。  
 Optimized code.
 * 移除原先的flag和prefix配置项，新增placeholder配置项，可以完全自定义表情代码。  
