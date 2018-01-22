@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dist/css/jquery.emoji.css"/>
+</head>
+<body>
+<script src="lib/script/jquery.min.js"></script>
+<script src="dist/js/jquery.emoji.min.js"></script>
+<script src="dist/js/emoji.list.js"></script>
+
+<textarea name="bianji" id="content" cols="30" rows="10"></textarea>
+<div id="btn">表情</div>
+<button class="btn btn-primary m-t-70" id="btnLoad2">加载表情 load emoji</button>
+
+<script>
+    $("#btnLoad2").click(function () {  //触发条件
+        $("#content").emoji({   //显示表情的正文内容
+            button: "#btn", //表情按钮
+            showTab: false,
+            animation: 'slide',
+            basePath: 'images/emoji',
+            icons: emojiLists   // 注：详见 js/emoji.list.js
+        });
+    });
+</script>
+</body>
+</html>
